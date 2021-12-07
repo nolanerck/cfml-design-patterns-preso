@@ -148,7 +148,7 @@
 					<h2>Using Design Patterns</h2>
 					<ul>
 						<li>Doesn't require an MVC framework</li>
-						<li>Doesn't always mean rewriting the entire codebase (MVC is the exception)</li>
+						<li>Doesn't always mean rewriting the entire codebase<br>(MVC is the exception)</li>
 						<li>Don't have to use 1, some, or all the Design Patterns</li>
 					</ul>
 				</section>
@@ -158,7 +158,7 @@
 				</section>
 
 				<section>
-					<h2>Let's look at some code!</h2>
+					<h2>Let's look at some patterns!</h2>
 				</section>
 
 				<section>
@@ -167,6 +167,39 @@
 						<li>Ensures that 1 and only 1 copy of a CFC gets created.</li>
 						<li>And that 1 copy is used by the <em>entire</em> application.</li>
 						<li>[Singleton Demo]</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Strategy Pattern</h2>
+					<ul>
+						<li>For when you have classes that KIND OF behave the same way, but
+							not <em>exactly</em> enough for Inheritance to be useful.
+						</li>
+						<li>(Also a great intro to Interfaces)</li>
+						<li>Ducks are a great example!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Strategy Pattern and Ducks!</h2>
+					<ul>
+						<li>Ducks can fly, swim, quack, and eat</li>
+						<li class="fragment">ALL ducks?</li>
+						<li class="fragment">Rubber duck toys?</li>
+						<li class="fragment">Wooden decoy ducks?</li>
+						<li class="fragment">[Strategy Demo]</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Strategy Pattern</h2>
+					<ul>
+						<li>Real world uses:</li>
+						<li>Payroll system: Full time employees, contractors, interns</li>
+						<li>Do they all get paid the same way?</li>
+						<li>Video games: things that fly...birds, insects, space ships</li>
+						<li>Do they all fly the same way?</li>
 					</ul>
 				</section>
 
@@ -208,7 +241,7 @@
 						<li>Adds new behavior to a CFC</li>
 						<li>Replacemnet for tangled inheritance trees</li>
 						<li>Happens at run-time</li>
-						<li>Instead of inheriting the new functionality, the componen is <em>decorated</em> with it</li>
+						<li>Instead of inheriting the new functionality, the component is <em>decorated</em> with it</li>
 					</ul>
 				</section>
 
@@ -235,12 +268,31 @@
 				</section>
 
 				<section>
-					<h2>Tips</h2>
+					<h2>Decorator Pattern</h2>
 					<ul>
+						<li>[Decorator Demo]</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Decorator Pattern</h2>
+					<ul>
+						<li>Real world uses: any time you have a bunch of options, each with its own business logic</li>
+						<li>Adding logging, security, polling, and 2FA to a piece of functionality in your app</li>
+						<li>...then later adding a feature flag requirement</li>
+						<li>...write 1 FeatureFlag CFC, and decorate your app as needed.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Some Useful Tips</h2>
+					<ul>
+						<li>Don't feel like you have to jump in head first</li>
+						<li>Treat it like a tool in a tool box</li>
 						<li>Use obvious/standard naming conventions:
 							<br>SQLFactory, CustomerDecorator, etc
 						</li>
-						<li>Dependency Injection is also very worth watching (it's not scary, I promise)</li>
+						<li>Dependency Injection is also very worth learning<br>(it's not scary, I promise)</li>
 					</ul>
 				</section>
 
@@ -251,6 +303,7 @@
 						<li>Only needed a couple CFCs for each.</li>
 						<li>Able to combine patterns together for even more code reuse!</li>
 						<li>Did not require any 3rd party libaries.</li>
+						<li>But does take a little discipline and getting used to</li>
 					</ul>
 				</section>
 
@@ -258,7 +311,7 @@
 					<h2>Other Resources</h2>
 					<ul>
 						<li>"Object-Oriented Programming in ColdFusion" - Matt Gifford</li>
-						<li>"Head First Design Pattens"</li>
+						<li>"Head First Design Patterns" - Eric Freeman & Elisabeth Robson</li>
 						<li>"Design Patterns: Elements Of Reusable Object-Oriented Software" (Gang of Four)</li>
 						<li>South of Shasta training classes</li>
 						<li>CFCasts.com video series</li>
