@@ -177,8 +177,8 @@
 						<li>You don't do createObject() directly</li>
 						<li>Ask the Factory to create an object <em>for</em> you</li>
 						<li>Requires only 1 CFC!</li>
-						<li>[Factory 1 Demo</li>
-						<li>[Factory 2 Demo</li>
+						<li>[Factory 1 Demo]</li>
+						<li>[Factory 2 Demo]</li>
 					</ul>
 				</section>
 
@@ -196,19 +196,53 @@
 					<h2>Adapter Pattern</h2>
 					<ul>
 						<li>Real world use: swapping vendor libaries/APIs</li>
-						<li>Don't want to rebuild your entire app when switching</li>
+						<li>Don't want to rebuild your entire app when switching vendors</li>
+						<li>Use an Adapter! Leave your app code as-is, just adapt the vendor methods so they work the same way</li>
 					</ul>
 				</section>
 
-				<!-- <section>
+				<section>
+					<h2>Decorator Pattern</h2>
+
+					<ul>
+						<li>Adds new behavior to a CFC</li>
+						<li>Replacemnet for tangled inheritance trees</li>
+						<li>Happens at run-time</li>
+						<li>Instead of inheriting the new functionality, the componen is <em>decorated</em> with it</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Decorator Pattern</h2>
+
+					<ul>
+						<li>Building an espresso machine</li>
+						<li>4 types of coffee: House Blend, Dark Roast, Espresso, Decaf</li>
+						<li>Whip cream and/or hazelnut on all 4</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="images/1_4-coffees.png" />
+				</section>
+
+				<section>
+					<img src="images/2_8-coffees-whip-cream.png" />
+				</section>
+
+				<section>
+					<img src="images/3_16coffees.png" />
+				</section>
+
+				<section>
 					<h2>Tips</h2>
 					<ul>
 						<li>Use obvious/standard naming conventions:
-							<br>SQLFactory, ProductFacade, etc
+							<br>SQLFactory, CustomerDecorator, etc
 						</li>
-						<li>Stick to the </li>
+						<li>Dependency Injection is also very worth watching (it's not scary, I promise)</li>
 					</ul>
-				</section> -->
+				</section>
 
 				<section>
 					<h2>Recap</h2>
