@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Real world scenarios for modern CFML</title>
+
+		<link rel="stylesheet" href="../Reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="../Reveal.js/css/theme/moon.css" id="theme">
+		<style>
+			.reveal h2
+			{ 
+				text-transform: none; 
+				font-size: 60px;
+			}
+
+			.reveal ul li, .reveal p
+			{
+				font-size: 34px;
+				text-align: left;
+			}
+
+			.highlight 
+			{ 
+				color: green 
+			}
+
+			.code
+			{
+				font-family: "Courier";
+				color: green;
+			}
+
+			.reveal p.centered
+			{
+				text-align: center;
+			}
+
+			.reveal ul.remove-dot
+			{
+				list-style-type: none;
+			}
+		</style>		
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>CFML Design Patterns and Uses</h2>
+					<p class="centered">Nolan Erck</p>
+					<p class="centered">South of Shasta Consulting</p>
+				</section>
+
+				<section>
+					<h2>About Me</h2>
+					<ul>
+						<li>Software Consultant (southofshasta.com)
+							<ul>
+								<li>Software Development, Training, Design</li>
+							</ul>
+						</li>
+						<li>ColdFusion, C++, Java, jQuery, PHP, .NET, HTML5, Android, SQL, etc...</li>
+						<li>Manager, SacInteractive User Group</li>
+						<li>Reformed Video Game Developer<br>(Grim Fandango, SimPark, StarWars Rogue Squadron).</li>
+						<li>Music Junkie</li>
+					</ul>
+				</section>
+
+				<section data-background-image="./images/record-collection.jpg">
+				</section>
+
+				<section data-background-image="./images/charlie_brown.png" data-background-size="contain">
+				</section>
+
+				<section>
+					<h2>Code And Slides</h2>
+					<p class="centered">github.com/nolanerck</p>
+					<p class="centered">cfml-design-patterns-preso</p>
+				</section>
+
+				<section>
+					<h2>Prerequisites</h2>
+					<ul>
+						<li>Have some experience using CFCs.</li>
+						<li>Don't need to be an OOP expert.</li>
+						<li>Don't need to have used an MVC framework.</li>
+						<li>And 1 more thing you need to know...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Prerequisites</h2>
+					<ul>
+						<li>Object Oriented Programming is hard.</li>
+						<li>And some of it is confusing at first.</li>
+						<li class="fragment">And that's NORMAL.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Today's Agenda</h2>
+					<ul>
+						<li>What are Design Patterns?</li>
+						<li>Why do I want to use them?</li>
+						<li>Some common design patterns</li>
+						<li>Examples of when to use design patterns</li>
+						<li>Tips</li>
+						<li>Other resources</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What Is A Design Pattern?</h2>
+					<ul>
+						<li>A "design pattern"
+							<ul>
+								<li>$6 phrase for "a way to organize your classes so they work together in a flexible way".</li>
+								<li>Like a for() loop, if(), array[]</li>
+								<li>Reusable technique, based around objects.</li>
+							</ul>
+						</li>
+
+						<li>There are lots of design patterns:
+							<ul>
+								<li>Singleton, Factory, Template Method, Model-View-Controller, Observer,
+									Dependency Injection, Facade, Finite State Machine, 
+								</li>
+								<li class="fragment">and several more!</li>
+								<li class="fragment">that you might NEVER use!</li>
+								<li class="fragment">...or that you might use all the time</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What Is A Design Pattern?</h2>
+					<ul>
+						<li>Not platform specific.</li>
+						<li>Available for ColdFusion, Java, .NET, JavaScript, etc.</li>
+						<li>Most OOP langauges can do some variation of these.</li>
+						<li>Naming conventions and overall design is similar everywhere.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Using Design Patterns</h2>
+					<ul>
+						<li>Doesn't require an MVC framework</li>
+						<li>Doesn't always mean rewriting the entire codebase (MVC is the exception)</li>
+						<li>Don't have to use 1, some, or all the Design Patterns</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>They're not scary, I promise</h2>
+				</section>
+
+				<section>
+					<h2>Let's look at some code!</h2>
+				</section>
+
+				<section>
+					<h2>Singleton</h2>
+					<ul>
+						<li>Ensures that 1 and only 1 copy of a CFC gets created.</li>
+						<li>And that 1 copy is used by the <em>entire</em> application.</li>
+						<li>[Singleton Demo]</li>
+					</ul>
+				</section>
+
+				<!-- <section>
+					<h2>Tips</h2>
+					<ul>
+						<li>Use obvious/standard naming conventions:
+							<br>SQLFactory, ProductFacade, etc
+						</li>
+						<li>Stick to the </li>
+					</ul>
+				</section> -->
+
+				<section>
+					<h2>Other Resources</h2>
+					<ul>
+						<li>Book: "Object-Oriented Programming in ColdFusion" - Matt Gifford</li>
+						<li>Book: "Head First Design Pattens"</li>
+						<li>South of Shasta training classes</li>
+						<li>CFCasts.com video series</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Learning in 30 minutes a day.</h2>
+				</section>
+
+				<section>
+					<h2>Questions? Comments?<br />Need consulting help?</h2>
+					<ul>
+						<li>southofshasta.com</li>
+						<li>nolan@southofshasta.com</li>
+						<li>Twitter: @southofshasta @nolanerck</li>
+						<li>Github: nolanerck</li>
+					</ul>
+					<p class="centered">Thanks!</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="../Reveal.js/js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize();
+		</script>
+
+		<script defer src="../fontawesome/on-server/js/fontawesome-all.js"></script>
+
+	</body>
+</html>
