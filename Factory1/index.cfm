@@ -1,4 +1,4 @@
 <cfscript>
-	objEntertainer = new EntertainerFactory().createEntertainer( "Author" );
+	objEntertainer = new EntertainerFactory().createEntertainer( "Actor" );
 	WriteDump( objEntertainer );
 </cfscript>

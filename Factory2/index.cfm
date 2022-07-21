@@ -1,10 +1,13 @@
 <cfscript>
-	objFactory = new SQLFactory( "mysql" );
-	objCustomers = objFactory.createModel( "Customers" );
+	objFactory = new SQLFactory( "oracle" );
+	myObject   = objFactory.createModel( "Customers" );
 
-	// objCustomers = application.SQLfactory.createModel( "Customers" );
+	/* Using BOTH the Factory and Singleton patterns in 1 line of code! So fancy! */
+	// myObject = application.SQLfactory.createModel( "Musician" );
 	
-	WriteDump( objCustomers );
+	WriteDump( myObject );
+
+	// WriteOutput( myObject.rehearse() );
 
 	
 </cfscript>

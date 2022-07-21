@@ -5,7 +5,7 @@ component
 		return this;
 	}
 
-	public any function gobble()
+	public any function gobble() // Turkey-specific functionality :)
 	{
 		return "<p>gobble, gobble!</p>";
 	}

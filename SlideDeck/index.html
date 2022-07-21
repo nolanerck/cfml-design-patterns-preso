@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Real world scenarios for modern CFML</title>
+		<title>CFML Design Patterns and Uses</title>
 
-		<link rel="stylesheet" href="../Reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="../Reveal.js/css/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="./Reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="./Reveal.js/css/theme/moon.css" id="theme">
 		<style>
 			.reveal h2
 			{ 
@@ -49,7 +49,7 @@
 				<section>
 					<h2>CFML Design Patterns and Uses</h2>
 					<p class="centered">Nolan Erck</p>
-					<p class="centered">South of Shasta Consulting</p>
+					<p class="centered">South of Shasta</p>
 				</section>
 
 				<section>
@@ -61,8 +61,8 @@
 							</ul>
 						</li>
 						<li>ColdFusion, C++, Java, jQuery, PHP, .NET, HTML5, Android, SQL, etc...</li>
-						<li>Manager, SacInteractive User Group</li>
-						<li>Reformed Video Game Developer<br>(Grim Fandango, SimPark, StarWars Rogue Squadron).</li>
+						<li>Manager, Sac Interactive Tech Meetup</li>
+						<li>Reformed Video Game Developer - Grim Fandango, SimPark, StarWars Rogue Squadron, etc...</li>
 						<li>Music Junkie</li>
 					</ul>
 				</section>
@@ -207,7 +207,7 @@
 					<h2>Factory Pattern</h2>
 					<ul>
 						<li>Used for creating different variations of the same Object</li>
-						<li>You don't do createObject() directly</li>
+						<li>You don't do createObject() or new() directly</li>
 						<li>Ask the Factory to create an object <em>for</em> you</li>
 						<li>Requires only 1 CFC!</li>
 						<li>[Factory 1 Demo]</li>
@@ -303,13 +303,14 @@
 						<li>Only needed a couple CFCs for each.</li>
 						<li>Able to combine patterns together for even more code reuse!</li>
 						<li>Did not require any 3rd party libaries.</li>
-						<li>But does take a little discipline and getting used to</li>
+						<li>But does take a little discipline and getting used to.</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>Other Resources</h2>
 					<ul>
+						<li>"Modern ColdFusion (CFML) in 100 Minutes" - Luis Majano</li>
 						<li>"Object-Oriented Programming in ColdFusion" - Matt Gifford</li>
 						<li>"Head First Design Patterns" - Eric Freeman & Elisabeth Robson</li>
 						<li>"Design Patterns: Elements Of Reusable Object-Oriented Software" (Gang of Four)</li>
@@ -336,13 +337,13 @@
 			</div>
 		</div>
 
-		<script src="../Reveal.js/js/reveal.js"></script>
+		<script src="./Reveal.js/js/reveal.js"></script>
 
 		<script>
 			Reveal.initialize();
 		</script>
 
-		<script defer src="../fontawesome/on-server/js/fontawesome-all.js"></script>
+		<!-- <script defer src="./fontawesome/on-server/js/fontawesome-all.js"></script> -->
 
 	</body>
 </html>

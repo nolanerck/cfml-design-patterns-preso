@@ -1,4 +1,4 @@
-component accessors=true
+abstract component accessors=true
 {
 	property name="description" type="string";
 
@@ -7,5 +7,5 @@ component accessors=true
 		return this;
 	}
 
-	public numeric function cost(){};
+	abstract numeric function cost(){};
 }

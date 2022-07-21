@@ -1,9 +1,9 @@
-component extends=Beverage
+abstract component extends=Beverage
 {
 	public any function init()
 	{
 		return this;
 	}
 
-	public string function getDescription(){};
+	abstract string function getDescription(){};
 }
